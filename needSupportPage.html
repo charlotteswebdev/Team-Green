@@ -19,6 +19,17 @@
 </main>
 
 <body>
+    <form name="recipeList" action="" method = "GET"></form>
+    <p> Type what food you have: </p>
+    <input type="text" name="inputbox" value="" placeholder="chicken, tomato, lemon">
+    <input type="button" id="submitButton" name="button" value="click" onClick="printOutput(this.form)">
+    </form>
+    <p id="return"></p>
+    <form name="dietaryRequirements">
+    <p>Do you have dietary requirements?</p>
+    <input type="radio" name="dietaryRequirement" value="yes"> Yes
+    <input type="radio" name="dietaryRequirement" value="no"> No
+    </form>
 </body>
 
 </html>
