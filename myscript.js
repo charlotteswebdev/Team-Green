@@ -17,11 +17,19 @@ const porkChopWithCreamyLeeks = ['pork chop','leeks','cream','cheese']
 
 const allRecipes = [chorizoMozzareallaGnocchiBake,salmonNicoise, salmonAsparagusGratin,potatoHashGreens,braisedSesameTofu,roastDinner,fiveSpiceRice,kimichiPancake,spaghettiWithNduja,tomatoAndBlackBeanTofuSalad,salmonRisotto,chickenFajitas,porkChopWithCreamyLeeks]
 
-//how many recipes do we have - can have a we currently have () recipes available
+//how many recipes do we have - can have a we currently have () recipes available - show this in HTML
+
+document.addEventListener('DOMContentLoaded',function() {
 
 const recipesLength = allRecipes.length
 
-console.log(recipesLength)
+const recipeLengthOutput = document.getElementById('recipe-length')
+
+const recipeMessage = `We are currently helping with ${recipesLength} recipes`
+
+recipeLengthOutput.textContent = recipeMessage
+
+})
 
 //list all the unique ingredients in the recipes and list them alphabetically
 
