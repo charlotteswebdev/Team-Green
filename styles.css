@@ -11,6 +11,12 @@ h2 {
     margin: 5%;
 }
 
+h3 {
+    text-align: center;
+    margin: 5%;
+    font-size: medium;
+}
+
 .nav-div {
     display: flex;
     justify-content: space-between;
@@ -82,10 +88,12 @@ img {
     height: 50%;
 }
 .google-map {
-        padding-bottom: 50%;
-        position: relative;
-        display:none;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+    display:none;
 }
+
 .google-map iframe {
     height: 100%;
     width: 100%;
@@ -94,18 +102,26 @@ img {
     position: absolute;
 }
 
-.map-div {
+.row {
     display: flex;
     justify-content: center;
-    justify-self: center;
 
+  }
+  
+.column {
+    flex: 33.33%;
+    padding: 5px;
 }
 
 .buttonMap {
     font-size: 20px;
     font-weight: bold;
-    width: 40%;
+    width: 160px;
     height: 80px;
+    display: block;
+    float: center;
+    padding: 10px;
+    
     /* border: 2px solid black; */
 
 }
@@ -123,18 +139,6 @@ img {
     justify-self: center;
     width: 50%;
     height: 50%;
-}
-
-.google-map {
-        padding-bottom: 50%;
-        position: relative;
-}
-.google-map iframe {
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
 }
 
 img {
@@ -231,3 +235,31 @@ input[type="radio"] {
             transform: scale(1.5);
             margin-right: 5px;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown .drop {
+    background-color: transparent;
+    margin: 2px;
+}
+.dropdown .drop:hover {
+    color: red;
+}
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    display: block;
+  }

@@ -11,35 +11,47 @@
         <nav id="nav-bar">
             <header class="menu">Something here</header>
             <header class="menu" onclick ="window.location.href = 'map.html';">Food bank map</header>
-            <header class="menu"> Quick Menu</header>
+            <div class="dropdown">
+                <header class="drop">Quick Menu
+                </header>
+                <div class="dropdown-content">
+                  <a href="Index.html">Homepage</a>
+                  <a href="needSupportPage.html">Need support</a>
+                  <a href="giveHelpPage.html">Want to help</a>
+                  <a href="getInvolved.html">Get involved!</a>
+                </div>
+            </div>
         </nav>
         <button class="btn-back" type="button" onclick="window.location.href = 'Index.html';">Back</button>
     </div>
 
     <h2>Find your closest food bank</h2>
     
-    <div class="map-div">
-        <button class = "buttonMap" id="London map" onclick="viewMap('London')">View London</button>    
-        <button class = "buttonMap" id='Birmingham map' onclick="viewMap('Birmingham')">View Birmingham</button>
-        <button class = "buttonMap" id='Manchester map' onclick="viewMap('Manchester')">View Manchester</button>
-        <button class = "buttonMap" id='Belfast map' onclick="viewMap('Belfast')">View Belfast</button>
+    <div class="row">
+        <div class="colummn"> 
+            <button class = "buttonMap" id="London map" onclick="viewMap('London')">View London</button>    
+            <button class = "buttonMap" id='Birmingham map' onclick="viewMap('Birmingham')">View Birmingham</button>  
+        </div>
+        <div class="colummn"> 
+            <button class = "buttonMap" id='Manchester map' onclick="viewMap('Manchester')">View Manchester</button>
+            <button class = "buttonMap" id='Belfast map' onclick="viewMap('Belfast')">View Belfast</button>
+        </div>        
     </div>
-    
 
     <div id="London" class="google-map" style="display:none">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d128024.89159462407!2d-0.1312051286662831!3d51.53507780893645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfood%20banks!5e0!3m2!1sen!2suk!4v1692821300605!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d128024.89159462407!2d-0.1312051286662831!3d51.53507780893645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfood%20banks!5e0!3m2!1sen!2suk!4v1692821300605!5m2!1sen!2suk" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div id="Birmingham" class="google-map" style="display:none">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d125329.97313474605!2d-1.9797299390753857!3d52.4869890634841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfood%20banks!5e0!3m2!1sen!2suk!4v1692821378574!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d125329.97313474605!2d-1.9797299390753857!3d52.4869890634841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfood%20banks!5e0!3m2!1sen!2suk!4v1692821378574!5m2!1sen!2suk" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div id="Manchester" class="google-map" style="display:none">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d151985.72115878089!2d-2.2352572444062253!3d53.47244730718422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfood%20bank!5e0!3m2!1sen!2suk!4v1693239403237!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d151985.72115878089!2d-2.2352572444062253!3d53.47244730718422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfood%20bank!5e0!3m2!1sen!2suk!4v1693239403237!5m2!1sen!2suk" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div id="Belfast" class="google-map" style="display:none">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d73961.43278449823!2d-6.012452515948525!3d54.598799527582344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfood%20bank!5e0!3m2!1sen!2suk!4v1693239516408!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d73961.43278449823!2d-6.012452515948525!3d54.598799527582344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfood%20bank!5e0!3m2!1sen!2suk!4v1693239516408!5m2!1sen!2suk" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
         
 </main>

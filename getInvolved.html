@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" lang="english">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Food bank map</title>
+</head>
+<main>
+    <div class="nav-div">
+        <nav id="nav-bar">
+            <header class="menu" onclick ="window.location.href = 'map.html';">Food bank map</header>
+            <div class="dropdown">
+                <header class="drop">Quick Menu
+                </header>
+                <div class="dropdown-content">
+                  <a href="Index.html">Homepage</a>
+                  <a href="needSupportPage.html">Need support</a>
+                  <a href="giveHelpPage.html">Want to help</a>
+                  <a href="getInvolved.html">Get involved!</a>
+                </div>
+            </div>
+        </nav>
+        <button class="btn-back" type="button" onclick="window.location.href = 'Index.html';">Back</button>
+    </div>
+
+    <h2> Get involved! </h2>
+    
+    <h3>Please get in touch if you would like to volunteer with us!</h3>
+
+        <div id="flex-container">
+            <input type="text" id="firstname" name="First-name" value="" placeholder="First name">
+            <input type="text" name="Last-name" value="" placeholder="Last name">
+            <input type="text" id="e-mail" name="e-mail" value="" placeholder="yourEmail@mail.com">
+            <input type="button" id="submitButton" name="button" value="Submit" onClick="sayThankYou()">    
+    
+        </div>
+
+    
+    
+    
+</main>
+
+<body>
+    <script>
+        function sayThankYou(e) {
+            var firstName= document.getElementById("firstname").value;
+            var email= document.getElementById("e-mail").value;
+            if (firstName==""){
+            alert('Please fill in your name')
+            }
+            if (email==""){
+            alert('Please fill in your email')
+            }
+            else {                
+            alert('Thank you for getting in touch, '+firstName)
+            }
+        }
+    </script>
+</body>
+
+
