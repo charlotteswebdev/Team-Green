@@ -209,41 +209,39 @@ a {
 a:hover {
     text-decoration: underline;
 }
-<style>
-        body {
+body {
             font-family: Arial, sans-serif;
             background-color: #E0E2E9;
             margin: 0;
             padding: 0;
-        }
+}
         
-        form {
+form {
             margin: 20px;
             padding: 20px;
             background-color: #545365;
             border-radius: 10px;
             color: #E0E2E9;
-        }
+}
 
-        p {
+p {
             color: #318897;
-        }
+}
 
-        input[type="text"], input[type="button"], input[type="radio"] {
+input[type="text"], input[type="button"], input[type="radio"] {
             margin: 5px;
             padding: 10px;
             border: none;
             border-radius: 5px;
-        }
+}
 
-        input[type="text"], input[type="button"] {
+input[type="text"], input[type="button"] {
             background-color: #BDF0D6;
             color: #545365;
             cursor: pointer;
-        }
+}
 
-        input[type="radio"] {
+input[type="radio"] {
             transform: scale(1.5);
             margin-right: 5px;
-        }
-    </style>
+}
