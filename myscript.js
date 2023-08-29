@@ -33,7 +33,7 @@ recipeLengthOutput.textContent = recipeMessage
 
 //list all the unique ingredients in the recipes and list them alphabetically
 
-const allIngredients = allRecipes.flat()
+const allIngredients = allRecipes.flat();
 
 const allUniqueIngredients = [...new Set (allIngredients)]
 
@@ -71,3 +71,29 @@ capsAllUniqueIngredients.forEach((ingredient)=>{
 )
 
 //turning the recipe a different colour if the ingredients is checked
+document.addEventListener('DOMContentLoaded',function(){
+    const recipeContainer = document.querySelectorAll('.recipe-card')
+
+    function changeRecipeColor(){
+        recipeContainer.forEach((elem)=>{
+            const checkboxes = elem.querySelectorAll('input[type="checkbox"]')
+            let counter = 0
+
+            checkboxes.forEach((checkbox)=>{
+                if(checkbox.checked){
+                    counter++
+                }
+            })
+                //can adjust the line below to change color saturation
+            const colorChange = Math.min(100, counter * 10)
+            elem.style.backgroundColor = `hsl(120,${colorChange}%, 50%,)`
+        })
+    }
+
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]')
+    checkboxes.forEach((checkbox)=>{
+        checkbox.addEventListener('change',changeRecipeColor)
+    })
+
+    changeRecipeColor()
+})
