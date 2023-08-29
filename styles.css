@@ -1,7 +1,7 @@
 header,
 h1 {
     text-align: center;
-    background-color: rgb(151, 146, 146);
+    background-color: rgb(52, 197, 126);
     margin: -8px;
     padding: 10px;
 }
@@ -21,7 +21,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(252, 197, 126);
+    background-color: rgb(52, 197, 126);
     margin: -8px;
     padding: 0 10px 0 10px;
     height: 45px;
