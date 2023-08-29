@@ -163,16 +163,13 @@ body {
 }
 
 .recipe-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 0px;
-    padding: 0px;
+  flex-wrap: wrap;
+  gap: 0px;
 }
 
 .recipe-card {
-    border-radius: 0px;
-    padding: 0px;
-    color: #E0E2E9;
+  border: 1px solid #ccc;
+  text-align: center;
 }
 
 .recipe-card h2 {
